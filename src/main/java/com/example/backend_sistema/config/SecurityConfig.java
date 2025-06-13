@@ -37,6 +37,17 @@ public class SecurityConfig {
                         // Endpoints de menú (públicos para pruebas)
                         .requestMatchers("/api/menu/**").permitAll()
 
+                        .requestMatchers("/api/platillos/**").permitAll()
+
+                        .requestMatchers("/api/bebidas/**").permitAll()
+
+                        .requestMatchers("/api/postres/**").permitAll()
+
+                        .requestMatchers("/api/ordenes/**").permitAll()
+
+                        .requestMatchers("/api/detalle_orden/**").permitAll()
+
+
                         // H2 Console (solo desarrollo)
                         .requestMatchers("/h2-console/**").permitAll()
 
